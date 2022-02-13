@@ -12,10 +12,6 @@ console.log(aprendiendo);
 // variables con var
 var aprendiendo = 'JavaScript'
 
-// variables con const
-// Se debe dar el valor de inicio y el valor nunca cambia
-const aprendiendoConst = 'JavaScript';
-
 // variables con let
 let aprendiendoLet;
 aprendiendoLet = true;
@@ -36,15 +32,6 @@ if (musicaLet){
     console.log('dentro del if: ' + musicaLet);
 }
 console.log('fuera del if: ' + musicaLet);
-
-// scope con const
-// alcance que tienen las variables. Let 
-const musicaConst = 'Rock';
-if (musicaConst){
-    const musicaConst = 'Grunge';
-    console.log('dentro del if: ' + musicaConst);
-}
-console.log('fuera del if: ' + musicaConst);
 
 // template strings
 const nombre = 'Juan';
