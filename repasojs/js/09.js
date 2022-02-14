@@ -16,7 +16,24 @@ const tecnologias = ["HTML", "CSS","JavaScript", "React", "Node.js"]
 // tecnologias.shift() //Elimina el primer elemento del array
 // tecnologias.splice(2,1) //El método splice elimina elementos dentro del array
 
-//Array metods
+// //Array metods
+// // filter permite iterar en cada elemento del arreglo y no modifica el arreglo original
+// const nuevoArray = tecnologias.filter( function(tech ){
+//     return tech === "React"
+// })
+// console.table(nuevoArray);
 
-console.table(tecnologias);
+// // Reemplazar elementos de un arreglo
+// tecnologias[0] = "GraphQL"
+// console.table(tecnologias)
+
+const nuevoArray = tecnologias.map(function(tech){
+    if(tech === 'HTML'){
+        return "GraphQL"
+    }
+    else {
+        return tech
+    }
+})
+console.table(nuevoArray)
 
